@@ -9,12 +9,17 @@ on:
 jobs:
     build-deploy:
         runs-on: ubuntu-latest
+
+        strategy:
+            matrix:
+              node-version: [10.x]
+
         steps:
         - uses: actions/checkout@v2
         - name: Checkout & Setup Node
         uses: actions/setup-node@v1
         with:
-            node-version: [10.x]
+            node-version: ${{ matrix.node-version }}
         - run: npm install
         - run: npm run build
         - name: Deploy
