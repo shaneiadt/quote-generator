@@ -1,1 +1,1 @@
-console.log('BOOTSTRAPED');
+console.log('JavaScript is READY!');
