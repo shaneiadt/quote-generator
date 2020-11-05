@@ -2,21 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
     <link rel="manifest" href="./site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Quote Generator"
+    <meta name="description" content="Quote Generator" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="./index.css" />
     <title>Quote Generator</title>
   </head>
   <body>
-    <h1>Quote Generator HOORAY</h1>
+    <div class="quote-container" id="quote-container">
+      <div class="quote-text">
+        <i class="fas fa-quote-left"></i>
+        <span id="quote"
+          >What you are is what you have been. What you'll be is what do you
+          now.</span
+        >
+      </div>
+      <div class="quote-author">
+        <span id="author">Buddha</span>
+      </div>
+      <div class="button-container">
+        <button class="twitter-button" id="twitter" title="Tweet">
+          <i class="fab fa-twitter"></i>
+        </button>
+        <button id="new-quote">New Quote</button>
+      </div>
+    </div>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <script type="module" src="./index.js"></script>
   </body>
