@@ -38,7 +38,7 @@ async function getQuote() {
             quote.classList.remove('long-quote');
         }
     } catch (error) {
-        // allow a max number of network requests calls
+        // allow a max number of network request calls
         if (calls >= 5) {
             clearTimeout(delayFunctionCall);
         } else {
