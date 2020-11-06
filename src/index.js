@@ -24,7 +24,7 @@ async function getQuote() {
         const XmlNode = new DOMParser().parseFromString(data.contents, 'text/xml');
         const json = xmlToJson(XmlNode);
 
-        const { forismatic: { quote: { quoteAuthor, quoteText, quoteLink } } } = json;
+        const { forismatic: { quote: { quoteAuthor, quoteText } } } = json;
 
         quote.textContent = quoteText;
         author.textContent = typeof quoteAuthor != 'string' ? 'Unknown' : quoteAuthor;
