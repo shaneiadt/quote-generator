@@ -1,0 +1,5 @@
+{
+  "imports": {
+    "@bundled-es-modules/axios": "./@bundled-es-modules/axios.js"
+  }
+}
